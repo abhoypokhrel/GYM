@@ -1,0 +1,249 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f44336;
+}
+
+/* Hero Section Slideshow */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.fade {
+    opacity: 1;
+}
+
+/* Services Section with Image */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Classes Section with Image */
+.classes {
+    background-color: #eee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.classes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.class-box {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.class-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.class-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Trainers Section with Image */
+.trainers {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.trainers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trainer-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.trainer-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Location Section with Image */
+.location {
+    padding: 50px 20px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.location .map img {
+    max-width: 100%;
+    height: 450px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+@media (max-width: 300px) {
+    .container {
+        width: 95%;
+    };
+}
